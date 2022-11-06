@@ -44,4 +44,9 @@ PR(D) = 1-d
 4. PR(D)
 = 1-d
 = 0.15
-    
+**Process of Calculating Page Rank**
+1. Initialize each page’s rank to 1.0
+2. On each iteration, have page p send a contribution of rank(p) / numNeighbors(p) to its neighbors (the pages it has links to).
+3. Set each page’s rank to 0.15 + 0.85 * contributionsReceived.
+Note:
+- 0.85 is the damping factor
