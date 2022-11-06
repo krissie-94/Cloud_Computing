@@ -67,7 +67,8 @@ Note:
 ![create-cluster_img3](https://user-images.githubusercontent.com/81246356/200157679-46ef2db4-d7bc-4621-b5c2-d7af4674109f.jpg)
 - Connect to Master node by clickin on SSSH
 ![connect to ssh](https://user-images.githubusercontent.com/81246356/200157820-82f7f5e2-3cb0-4b9c-b03b-4a6a91801bff.jpg)
-
-
+- Install Scala
+`$ curl -fL https://github.com/coursier/launchers/raw/master/cs-x86_64-pc-linux.gz | gzip -d > cs && chmod +x cs && ./cs setup`
+### 1. **Do this question**
 
 
