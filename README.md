@@ -24,11 +24,11 @@ PR(D) = 1-d
 5. Damping factor is 0.85
 
 - Then after first Iteration
-** A. Output **
+- ** A. Output **
 1. Page B would transfer half of its existing value, or 0.5, to page A and the other half, or 0.5, to page C.
 2. Page C would transfer all of its existing value, 1, to the only page it links to, A.
 3. Since D had three outbound links, it would transfer one third of its existing value, or approximately 0.33, to A.
-** B. Input **
+- ** B. Input **
 1. PR(A)
 = (1-d) + d * (PR(B) / 2 + PR(C) / 1 + PR(D) / 3)
 = (1-0.85) + 0.85 * (0.5 + 1 + 0.33)
