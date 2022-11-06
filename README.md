@@ -74,7 +74,46 @@ $ export SCALA_HOME=/usr/local/share/scala
 $ export PATH=$PATH:$SCALA_HOME/ 
 ```
 
-### 2. **Do this question using Scala**
+### 2. **Do this question using Pyspark**
+<img width="161" alt="do this question" src="https://user-images.githubusercontent.com/81246356/200159042-e0baa134-3f3f-460e-8684-e9472db25298.png">
+1. Manually calculate the first two(2) iterations of the pagerank
+- Frist iteration A = 1 B = (1/2) = 0.5 C = 1 + (1/2) = 1.5 PageRank (A) = 1 – 0.85 + 0.85 * 1 = 1 PageRank (B) = 1 – 0.85 + 0.85 * 1 = 0.575 PageRank (C) = 1 – 0.85 + 0.85 * 1.5 = 1.425
+- Second iteration A = 1 B = (1/2) = 0.5 C = 0.575 + (1/2) = 1.075 PageRank (A) = 1 – 0.85 + 0.85 * 1.425 = 1.36125 PageRank (B) = 1 – 0.85 + 0.85 * 0.5 = 0.575 PageRank (C) = 1 – 0.85 + 0.85 * 1.075 = 1.06375
+2. Prepare Data in hadoop distributed file system hdfs
+- Manually input the Data
+```
+vi pagerank_data.txt
+```
+
+### Data
+
+```
+A B
+A C
+B C
+C A
+```
+ ### Create a dictory to store the data
+```
+hdfs dfs -mkdir hdfs:///mydata 
+hdfs dfs -put pagerank_data.txt hdfs:///mydata
+```
+### RUn this command to verify data is stored in directory
+```
+hdfs dfs -ls hdfs:///mydata 
+```
+### Prepare  the program 
+
+```
+vi pagerank.py
+```
+### Run the program with PySpark
+
+```
+spark-submit pagerank.py hdfs:///mydata/pagerank_data.txt 1
+```
+ 
+<!--  
 1. Prepare Data
 ### Manually Input the data
 ```
@@ -93,6 +132,6 @@ hdfs dfs -ls hdfs:///mydata
 
 ```
 spark-shell
-```
+``` -->
 
 
