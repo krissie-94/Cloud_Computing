@@ -68,7 +68,12 @@ Note:
 - Connect to Master node by clickin on SSSH
 ![connect to ssh](https://user-images.githubusercontent.com/81246356/200157820-82f7f5e2-3cb0-4b9c-b03b-4a6a91801bff.jpg)
 - Install Scala
-`$ curl -fL https://github.com/coursier/launchers/raw/master/cs-x86_64-pc-linux.gz | gzip -d > cs && chmod +x cs && ./cs setup`
+```
+$ curl -fL https://github.com/coursier/launchers/raw/master/cs-x86_64-pc-linux.gz | gzip -d > cs && chmod +x cs && ./cs setup
+$ export SCALA_HOME=/usr/local/share/scala 
+$ export PATH=$PATH:$SCALA_HOME/ 
+```
+
 ### 1. **Do this question**
 
 
