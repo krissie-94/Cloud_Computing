@@ -52,8 +52,10 @@ Note:
 - 0.85 is the damping factor
 # **Observation of Page Rank**
 - A web page does not have input will have:
- constant PageRank: 1-d
- the smallest PageRank
+- constant PageRank: 1-d
+- the smallest PageRank
 - Input Web Pages' impact to the PageRank of a web page
- The more Input Web Pages the better.
- The higher PageRank of an Input Web Page the better.
+- The more Input Web Pages the better.
+- The higher PageRank of an Input Web Page the better.
+-# **B. Page Rank + PySpark + GCP**
+
