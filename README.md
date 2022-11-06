@@ -74,6 +74,25 @@ $ export SCALA_HOME=/usr/local/share/scala
 $ export PATH=$PATH:$SCALA_HOME/ 
 ```
 
-### 1. **Do this question**
+### 2. **Do this question using Scala**
+1. Prepare Data
+### Manually Input the data
+```
+vi pagerank_data.txt
+```
+### Create a dictory to store the data
+```
+hdfs dfs -mkdir hdfs:///mydata 
+hdfs dfs -put pagerank_data.txt hdfs:///mydata
+```
+### RUn this command to verify data is stored in directory
+```
+hdfs dfs -ls hdfs:///mydata 
+```
+### Prepare and run the program in Scala
+
+```
+spark-shell
+```
 
 
