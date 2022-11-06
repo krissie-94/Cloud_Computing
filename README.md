@@ -59,5 +59,10 @@ Note:
 - The higher PageRank of an Input Web Page the better.
 # **B. Page Rank + PySpark + GCP**
 ### 1. **Setup PySpark on GCP**
+- Enable Computer Engine API on Google cloud
+- Create Dataproc cluster
+- Configure and start running the cluster on Google cloud
+![create-cluster_img2](https://user-images.githubusercontent.com/81246356/200157646-ff80b7b0-1e53-4928-878c-9e596fe4c3f9.jpg)
+
 
 
