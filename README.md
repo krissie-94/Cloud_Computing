@@ -57,5 +57,5 @@ Note:
 - Input Web Pages' impact to the PageRank of a web page
 - The more Input Web Pages the better.
 - The higher PageRank of an Input Web Page the better.
--# **B. Page Rank + PySpark + GCP**
+# **B. Page Rank + PySpark + GCP**
 
