@@ -64,5 +64,7 @@ Note:
 - Configure and start running the cluster on Google cloud
 ![create-cluster_img2](https://user-images.githubusercontent.com/81246356/200157646-ff80b7b0-1e53-4928-878c-9e596fe4c3f9.jpg)
 
+![create-cluster_img3](https://user-images.githubusercontent.com/81246356/200157679-46ef2db4-d7bc-4621-b5c2-d7af4674109f.jpg)
+
 
 
