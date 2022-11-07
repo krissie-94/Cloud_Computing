@@ -110,7 +110,7 @@ hdfs dfs -ls hdfs:///mydata
 ### Prepare  the program 
 
 ```
-vi pagerank.py
+ pagerank.py
 ```
 ### Run the program with PySpark
 
