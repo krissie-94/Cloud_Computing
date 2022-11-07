@@ -119,7 +119,7 @@ spark-submit pagerank.py hdfs:///mydata/pagerank_data.txt 1
 ```
 # Result
 
-- ** First Iteration**
+- **First Iteration**
  
 <!--  
 1. Prepare Data
