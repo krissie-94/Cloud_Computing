@@ -30,17 +30,17 @@ PR(D) = 1-d
 3. Since D had three outbound links, it would transfer one third of its existing value, or approximately 0.33, to A.
 - **B. Input**
 1. PR(A)
-= (1-d) + d * (PR(B) / 2 + PR(C) / 1 + PR(D) / 3)
-= (1-0.85) + 0.85 * (0.5 + 1 + 0.33)
-= 1.71
+= (1-d) + d * (PR(C) / 1 
+= (1-0.85) + 0.85 * ( 1 )
+= 1
 2. PR(B)
-= (1-d) + d * (PR(D) / 3)
-= (1-0.85) + 0.85 * 0.33
-= 0.43
+= (1-d) + d * (PR(A) / 2)
+= (1-0.85) + 0.85 * 0.5
+= 0.575
 3. PR(C)
-= (1-d) + d * (PR(B) / 2 + PR(D) / 3)
-= (1-0.85) + 0.85 * (0.5 + 0.33)
-= 0.86
+= (1-d) + d * (PR(A) / 2 + PR(B) / 1)
+= (1-0.85) + 0.85 * (0.5 + 1)
+= 1.425
 4. PR(D)
 = 1-d
 = 0.15
@@ -115,11 +115,15 @@ vi pagerank.py
 ### Run the program with PySpark
 
 ```
-spark-submit pagerank.py hdfs:///mydata/pagerank_data.txt 1
+pyspark
 ```
+![pagerank-inut-pyspark1 0](https://user-images.githubusercontent.com/81246356/200213653-ff7da045-1d68-4e55-89b4-f61594ce113f.jpg)
+
 # Result
 
-- **First Iteration**
+- **Final output**
+![pagerank-output_yspark_final](https://user-images.githubusercontent.com/81246356/200213687-0554da28-13a2-4df9-ba14-a7194a1d1c2c.jpg)
+
  
 <!--  
 1. Prepare Data
