@@ -124,12 +124,37 @@ pyspark
 - **Final output**
 ![pagerank-output_yspark_final](https://user-images.githubusercontent.com/81246356/200213687-0554da28-13a2-4df9-ba14-a7194a1d1c2c.jpg)
 
+ # **B. Page Rank + Scala + GCP**
  
-<!--  
-1. Prepare Data
+ ## Setup Scala On GCP##
+1. Create a cloud storage bucket
+![scala_bucket1](https://user-images.githubusercontent.com/81246356/200214656-ffd62c7f-e261-421e-b8b5-61451a5c0168.jpg)
+2. Create a Dataproc Cluster
+![create-cluster_img3](https://user-images.githubusercontent.com/81246356/200214679-50b729e2-ce9f-4a21-b79e-94bfd4b55aaf.jpg)
+3. Connect to master node ssh
+
+![masternode-scala](https://user-images.githubusercontent.com/81246356/200214892-f1076781-de09-4ad3-8349-d373a26b1de0.jpg)
+
+4. Install Scala
+```
+$ curl -fL https://github.com/coursier/launchers/raw/master/cs-x86_64-pc-linux.gz | gzip -d > cs && chmod +x cs && ./cs setup
+$ export SCALA_HOME=/usr/local/share/scala 
+$ export PATH=$PATH:$SCALA_HOME/ 
+```
+
+
+# Do this question Using Scala#
+
 ### Manually Input the data
 ```
 vi pagerank_data.txt
+```
+### Data
+```
+A B
+A C
+B C
+C A
 ```
 ### Create a dictory to store the data
 ```
@@ -144,6 +169,26 @@ hdfs dfs -ls hdfs:///mydata
 
 ```
 spark-shell
-``` -->
+```
+- First Iteration
+![scala_implementation-img1](https://user-images.githubusercontent.com/81246356/200219074-200e0da0-3796-45a7-86a2-157ca19b54a3.jpg)
 
+![scala_implementation-img2](https://user-images.githubusercontent.com/81246356/200219120-102ec432-3ad6-49f7-8cbb-5444634d1813.jpg)
+
+- Second Iteration
+![scala_implementation_img_try1](https://user-images.githubusercontent.com/81246356/200219156-6e033e25-f846-494b-a38b-5babb46d9eef.jpg)
+
+![scala_implementation_img_try2](https://user-images.githubusercontent.com/81246356/200219170-87bb18a0-1d05-47cc-acf3-9b0219def7eb.jpg)
+
+
+# Sut Down the Cluster to Save credit
+
+
+![shut down cluster GCP scala](https://user-images.githubusercontent.com/81246356/200219443-f7720229-aaa9-4608-a9a7-eae79f49ea63.jpg)
+
+
+
+# Google Slide Presentation of Design and Implementation steps in Detail
+PageRank On GCP
+[title](PageRank On GCP)
 
