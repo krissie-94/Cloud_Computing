@@ -117,6 +117,9 @@ vi pagerank.py
 ```
 spark-submit pagerank.py hdfs:///mydata/pagerank_data.txt 1
 ```
+# Result
+
+- ** First Iteration**
  
 <!--  
 1. Prepare Data
