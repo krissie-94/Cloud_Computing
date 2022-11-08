@@ -201,6 +201,7 @@ spark-shell
 
 
 # Google Slide Presentation of Design and Implementation steps in Detail
-PageRank On GCP
-[title](PageRank On GCP)
+
+[PageRank On GCP](https://docs.google.com/presentation/d/1EqOtmat2i3SXFUPzNK5BOhry1galEv3lilK1fNXcktc/edit?usp=sharingP)
+
 
