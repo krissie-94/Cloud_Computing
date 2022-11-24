@@ -40,3 +40,13 @@ Yes. Colab is free of charge to use.
 - Configure and launch Google Cloud Dataproc Cluster 
 ![google cloud cluster](https://user-images.githubusercontent.com/81246356/203713556-9b0cdc3d-d514-4bbe-9229-2e62a4d934a7.jpg)
 ![dataproc-cluster](https://user-images.githubusercontent.com/81246356/203713812-61f94c1c-d237-4446-80ee-cda9ab863977.jpg)
+# Connecting to the Master Node using Secure Shell (ssh)
+![open-SSH-img1](https://user-images.githubusercontent.com/81246356/203721002-49878519-1804-43dd-8579-9bc0781a965f.jpg)
+
+# Prepare Data in HDFS
+-movies.csv
+- rating.csv
+- tags.csv
+- movie_recommendation_mllibs.py
+
+*** 1.Upload movies.csv and ratings.csv files at GCP
