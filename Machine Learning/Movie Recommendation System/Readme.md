@@ -44,9 +44,9 @@ Yes. Colab is free of charge to use.
 ![open-SSH-img1](https://user-images.githubusercontent.com/81246356/203721002-49878519-1804-43dd-8579-9bc0781a965f.jpg)
 
 # Prepare Data in HDFS
--movies.csv
+- movies.csv
 - rating.csv
 - tags.csv
 - movie_recommendation_mllibs.py
 
-*** 1.Upload movies.csv and ratings.csv files at GCP
+***1.Upload movies.csv and ratings.csv files at GCP***
