@@ -19,3 +19,9 @@ Yes. Colab is free of charge to use.
 
 ### 2. Upload the your data for this project, mine is csv file. Next install PySpark on Google Colab
 ![img-2Google-colab](https://user-images.githubusercontent.com/81246356/203697342-5b937a57-71be-475a-874b-036c96d4cbaf.jpg)
+
+# Cmpare Models and Make Recommendations
+![img-3Google-colab](https://user-images.githubusercontent.com/81246356/203703878-efc964a9-bef8-4459-9b16-ab19c074cb88.jpg)
+![img-4Google-colab](https://user-images.githubusercontent.com/81246356/203703900-a12d8a52-3f68-46f0-a985-faf52efb17c2.jpg)
+
+## Show Result
