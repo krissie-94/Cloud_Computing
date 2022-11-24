@@ -25,3 +25,12 @@ Yes. Colab is free of charge to use.
 ![img-4Google-colab](https://user-images.githubusercontent.com/81246356/203703900-a12d8a52-3f68-46f0-a985-faf52efb17c2.jpg)
 
 ## Show Result
+![img-5Google-colab](https://user-images.githubusercontent.com/81246356/203704070-d1658e17-b2bc-42ff-9b29-e2887dc991f6.jpg)
+
+## Save the modified ipynb file as py format
+![img-6Google-colab](https://user-images.githubusercontent.com/81246356/203704381-0c2f767a-8c80-4fca-be42-dab64ff17b17.jpg)
+
+## Save the modified ipynb file as html format
+
+![save as html](https://user-images.githubusercontent.com/81246356/203704449-ffb9bf54-11d7-431f-bacb-def2145668bc.jpg)
+
