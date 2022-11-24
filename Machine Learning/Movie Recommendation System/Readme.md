@@ -15,7 +15,7 @@ Yes. Colab is free of charge to use.
 
 # 3. Experiment Pyspark code (ipynb) of PySpark Collaborative Filtering with ALS
 ### 1. Create a Google colab account if you don't have any and start a New Project
+![img-1Google-colab](https://user-images.githubusercontent.com/81246356/203697014-90b4f3bf-e22f-4bd1-8eb0-90a306ceaf13.jpg)
 
 ### 2. Upload the your data for this project, mine is csv file. Next install PySpark on Google Colab
-
-![img-1Google-colab](https://user-images.githubusercontent.com/81246356/203697014-90b4f3bf-e22f-4bd1-8eb0-90a306ceaf13.jpg)
+![img-2Google-colab](https://user-images.githubusercontent.com/81246356/203697342-5b937a57-71be-475a-874b-036c96d4cbaf.jpg)
