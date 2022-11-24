@@ -35,3 +35,8 @@ Yes. Colab is free of charge to use.
 ![save as html](https://user-images.githubusercontent.com/81246356/203704449-ffb9bf54-11d7-431f-bacb-def2145668bc.jpg)
 
 # Run the py file saved on GCP
+## Set up PySpark on GCP
+- Make sure Enable Computer Engine API
+- Configure and launch Google Cloud Dataproc Cluster 
+![google cloud cluster](https://user-images.githubusercontent.com/81246356/203713556-9b0cdc3d-d514-4bbe-9229-2e62a4d934a7.jpg)
+![dataproc-cluster](https://user-images.githubusercontent.com/81246356/203713812-61f94c1c-d237-4446-80ee-cda9ab863977.jpg)
