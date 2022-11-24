@@ -50,3 +50,4 @@ Yes. Colab is free of charge to use.
 - movie_recommendation_mllibs.py
 
 ***1.Upload movies.csv and ratings.csv files at GCP***
+![upload movies, ratings](https://user-images.githubusercontent.com/81246356/203723586-a31473b6-404a-4183-a3ad-492d7d023386.jpg)
