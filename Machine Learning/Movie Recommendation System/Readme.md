@@ -52,7 +52,7 @@ Yes. Colab is free of charge to use.
 ***1.Upload movies.csv and ratings.csv files at GCP***
 ![upload movies, ratings](https://user-images.githubusercontent.com/81246356/203723586-a31473b6-404a-4183-a3ad-492d7d023386.jpg)
 
-***2. create a directory (folder) to store the data:
+***2. create a directory (folder) to store the data:***
 ```
 hdfs dfs -mkdir hdfs:///mydata 
 hdfs dfs -put movies.csv hdfs:///mydata
@@ -75,7 +75,17 @@ vi movie_recommendation_mllibs.py
 # Run the program with Pyspark
 
 ```
-spark-submit recommendation_engine_movielens.py
+spark-submit movie_recommendation_mllibs.py
 ```
 
 # 5.Result
+
+![final-result](https://user-images.githubusercontent.com/81246356/204054226-8a5df5b6-a533-48ad-9117-6bf3a0e58f1b.jpg)
+
+
+# Shut Down Cluster
+![shut down cluster](https://user-images.githubusercontent.com/81246356/204055050-488b56d5-a4d2-454d-a62e-a60cfca02306.jpg)
+
+
+# For more Detailed Information check the Google Slides.
+[Movie Reommendation System MLlib](https://docs.google.com/presentation/d/1EIGGI8IB0sp9BXnBCkNV5OwEkzLs2Jpi8_oDn7k5AEw/edit?usp=sharing)
