@@ -227,3 +227,6 @@ https://spark.apache.org/docs/latest/structured-streaming-kafka-integration.html
 Spark API interface:
 
 https://spark.apache.org/docs/latest/api/python/reference/pyspark.streaming.html
+
+# Project Presentation with Google Slides:
+https://docs.google.com/presentation/d/1EIGGI8IB0sp9BXnBCkNV5OwEkzLs2Jpi8_oDn7k5AEw/edit?usp=sharing
