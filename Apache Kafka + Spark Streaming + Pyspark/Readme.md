@@ -105,3 +105,29 @@ cd spark
 
 ![word-count output](https://user-images.githubusercontent.com/81246356/207112846-d50065da-d466-489a-8a0a-8191b5895eff.jpg)
 
+# Starting Kafka
+- Downlaod kafka which is available at https://kafka.apache.org/downloads
+```
+$ wget https://downloads.apache.org/kafka/3.3.1/kafka_2.12-3.3.1.tgz
+
+$ tar -xvf kafka_2.12-3.3.1.tgz
+```
+![img-10 download kafka](https://user-images.githubusercontent.com/81246356/207121824-9dfabf2d-9522-45f7-8502-fd512b9570f2.jpg)
+
+### Start Kafka Zookeeper Open new terminal - keep it open
+```
+$ cd kafka_2.12-3.3.1/
+
+$ bin/zookeeper-server-start.sh config/zookeeper.properties
+```
+
+![img-11 cd zookeeper](https://user-images.githubusercontent.com/81246356/207122013-57c11919-5745-48ce-a95c-b00e49058008.jpg)
+
+### Open a new Terminal -keep it open
+```
+$ cd kafka_2.12-3.3.1/
+
+$ bin/kafka-server-start.sh config/server.properties
+```
+![img-12 cd server](https://user-images.githubusercontent.com/81246356/207122345-048e3ce4-b3c3-447d-983d-ce454624b380.jpg)
+
