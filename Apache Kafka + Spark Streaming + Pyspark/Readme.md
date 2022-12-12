@@ -29,4 +29,79 @@ Kafka provides three main functions to its users:
 
 
 # Installing Spark
+-  Download spark-2.3.2 to the local machine:
+```
+$ wget https://dlcdn.apache.org/spark/spark-3.3.1/spark-3.3.1-bin-hadoop3.tgz
+```
+![img-1 install spark](https://user-images.githubusercontent.com/81246356/207105022-dbe3d08a-8b01-4663-bad2-0e1a8cda8755.jpg)
+
+- Unpack
+```
+$ tar -xvf spark-3.3.1-bin-hadoop3.tgz
+```
+![img-2 install spark](https://user-images.githubusercontent.com/81246356/207105056-3d2d329c-37fa-45a7-abf5-e8be5e8db3dc.jpg)
+
+- create a soft link:
+```
+ln -s /home/krisvesselee18/spark-3.3.1-bin-hadoop3 /home/krisvesselee18/spark
+```
+# Set Spark Environment Variable
+
+## Add Entry to bashrc file
+```
+export SPARK_HOME=/home/dpandey/spark
+
+export PATH=$SPARK_HOME/bin:$PATH
+
+export PATH=$SPARK_HOME/sbin:$PATH
+```
+
+## Load bashrc file
+```
+source ~/.bashrc
+```
+# Install Java
+```
+sudo apt-get update
+sudo apt install default-jdk
+java --version
+update-alternatives --list java
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64/bin/java
+```
+
+# Verify Installation
+```
+pyspark
+```
+![img-5 install spark](https://user-images.githubusercontent.com/81246356/207106717-e7a83308-70a4-4beb-81f9-5aa79e3429b0.jpg)
+
+
+### Start the master on local machine
+- start-master.sh
+- URL: http://34.70.113.82:8080/
+![img-9 start master](https://user-images.githubusercontent.com/81246356/207110982-8b709593-5f0b-4d8e-9469-839c5899cf91.jpg)
+
+![img-6 install spark](https://user-images.githubusercontent.com/81246356/207111037-644725a0-6da8-4886-b2a5-441ba9417ffe.jpg)
+### Start worker
+- start-slave.sh spark://34.70.113.82:7077
+- browse URL: http://34.70.113.82:8080/
+
+![img-7 install spark-slave](https://user-images.githubusercontent.com/81246356/207111274-aeceac67-e4d2-47bd-854f-833c545fad6e.jpg)
+
+### RUn Word Count example in Python
+
+- Open Terminal (1)
+```
+nc -lk 9999
+```
+![run nc 9999](https://user-images.githubusercontent.com/81246356/207112289-d94ca2d3-3d10-40ab-8613-e953809ad2a9.jpg)
+
+- Open Terminal (2)
+```
+cd spark
+./bin/spark-submit examples/src/main/python/streaming/network_wordcount.py localhost 9999
+```
+### Expected Ouput
+
+![word-count output](https://user-images.githubusercontent.com/81246356/207112846-d50065da-d466-489a-8a0a-8191b5895eff.jpg)
 
