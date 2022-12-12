@@ -131,3 +131,59 @@ $ bin/kafka-server-start.sh config/server.properties
 ```
 ![img-12 cd server](https://user-images.githubusercontent.com/81246356/207122345-048e3ce4-b3c3-447d-983d-ce454624b380.jpg)
 
+### Open another new terminal, Create Kafaka topics
+
+```
+$ bin/kafka-topics.sh --create --topic input_recommend_product --bootstrap-server localhost:9092 --partitions 3 --replication-factor 1
+$ bin/kafka-topics.sh --bootstrap-server localhost:9092 --list
+```
+![kafka topics](https://user-images.githubusercontent.com/81246356/207126223-1f621ff3-4387-4786-baf3-ab673e0c93ce.jpg)
+
+# Part Three: Event Processing on Apache Spark (PySpark)
+
+## Setup Spark
+```
+$ sudo apt install python3-pip
+$ pip3 install msgpack
+
+$ pip3 install kafka-python
+
+if pip3 command not found,
+
+$ sudo apt install python3-pip
+
+$ wget https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-kafka-0-8-assembly_2.11/2.3.2/spark-streaming-kafka-0-8-assembly_2.11-2.3.2.jar
+```
+### Create and Submit the park Application
+```
+$ cd
+
+$ vi processor.py
+```
+![kafka produce py](https://user-images.githubusercontent.com/81246356/207144726-3a9e1064-9594-45b4-8562-4b322064324c.jpg)
+
+```
+$ cd
+
+$ vi consumer.py 
+```
+
+![kafka consumer py](https://user-images.githubusercontent.com/81246356/207146044-1cc1afcc-4b21-408c-afc9-e37be3b19f4f.jpg)
+
+/bin/python3 consumer.py
+
+Run (Producer Terminal):
+![run producer py](https://user-images.githubusercontent.com/81246356/207145424-9903397c-7477-4d5d-8894-9cfea8ffb23f.jpg)
+
+Run (Consumer Terminal):
+### Create and Submit the park Application
+- Create pyspark_script directory: mkdir pyspark_script
+- cd pyspark_script
+- Download spark application file from this link: https://github.com/divyapandey03/Cloud-Computing/blob/main/Apache%20Kafka%20%2B%20Spark%20Streaming%20%2B%20PySpark/spark_processor.py
+- Download Spark Streaming’s Kafka libraries: wget https://repo1.maven.org/maven2/org/apache/spark/spark-streaming-kafka-0-8-assembly_2.11/2.3.2/spark-streaming-kafka-0-8-assembly_2.11-2.3.2.jar
+
+# Submit the spark Application:
+```
+spark-submit --jars /home/dpandey/pyspark_script/spark-streaming-kafka-0-8-assembly_2.11-2.3.2.jar --master spark:34.70.113.82:7077 --deploy-mode client /home/dpandey/spark_processor.py
+```
+
