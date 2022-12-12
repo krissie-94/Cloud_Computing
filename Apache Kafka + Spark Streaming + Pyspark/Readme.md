@@ -186,4 +186,44 @@ Run (Consumer Terminal):
 ```
 spark-submit --jars /home/dpandey/pyspark_script/spark-streaming-kafka-0-8-assembly_2.11-2.3.2.jar --master spark:34.70.113.82:7077 --deploy-mode client /home/dpandey/spark_processor.py
 ```
+Spark:
 
+(! https://kontext.tech/article/978/install-hadoop-332-in-wsl-on-windows)
+
+https://kontext.tech/article/1044/install-spark-321-on-linux-or-wsl
+
+https://spark.apache.org/docs/latest/api/python/index.html
+
+Spark Streaming:
+
+https://spark.apache.org/docs/latest/streaming-programming-guide.html
+
+https://spark.apache.org/docs/latest/index.html#running-the-examples-and-shell
+
+https://stackoverflow.com/questions/61891762/spark-3-x-integration-with-kafka-in-python
+
+Kafka:
+
+https://towardsdatascience.com/connecting-the-dots-python-spark-and-kafka-19e6beba6404
+
+https://docs.confluent.io/kafka-clients/python/current/overview.html#ak-python
+
+kafka jar files:
+
+https://mvnrepository.com/artifact/org.apache.spark/spark-streaming-kafka-0-10_2.12/3.3.1
+
+https://mvnrepository.com/artifact/org.apache.spark/spark-sql-kafka-0-10
+
+Spark python kafka intergration:
+
+https://spark.apache.org/docs/latest/structured-streaming-kafka-integration.html
+
+https://spark.apache.org/docs/latest/index.html#running-the-examples-and-shell
+
+https://spark.apache.org/docs/latest/submitting-applications.html
+
+https://spark.apache.org/docs/latest/structured-streaming-kafka-integration.html
+
+Spark API interface:
+
+https://spark.apache.org/docs/latest/api/python/reference/pyspark.streaming.html
