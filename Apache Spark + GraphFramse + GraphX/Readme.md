@@ -24,6 +24,10 @@ In the image above, we have a social network example. We can see the vertices re
 
 
 # I already have VM installed so Just SSH to VM 
+![my vm ssh](https://user-images.githubusercontent.com/81246356/208666497-c1384590-da81-4ef0-a30e-914ed100c5fa.jpg)
+
+![my vm ssh-2](https://user-images.githubusercontent.com/81246356/208666518-cfa83cfa-a51a-433c-8a02-9def52f3716f.jpg)
+
 - Install Java
 ```
 sudo apt-get update
@@ -87,6 +91,8 @@ spark-submit --packages graphframes:graphframes:0.8.2-spark3.1-s_2.12 graphX.py
 ![bfs img-2](https://user-images.githubusercontent.com/81246356/208654167-e972f761-2462-4af4-bf9f-6d4388318477.jpg)
 
 ![bfs img-3](https://user-images.githubusercontent.com/81246356/208654199-9ce431fb-bdbe-424a-b65b-6186c9c83534.jpg)
+
+![my vm ssh stopjpg](https://user-images.githubusercontent.com/81246356/208666558-80ed451f-5ec5-4d12-b950-fff6adbd0c8d.jpg)
 
 # References
 [Graphrames and Dataframes](https://graphframes.github.io/graphframes/docs/_site/index.html)
