@@ -1,6 +1,4 @@
-# References
-[Graphrames and Dataframes](https://graphframes.github.io/graphframes/docs/_site/index.html)
-[Intoduction to Spark GraphFrames](https://www.baeldung.com/spark-graph-graphframes)
+
 # Graphs
 A graph is a data structure having edges and vertices. The edges carry information that represents relationships between the vertices.
 
@@ -19,43 +17,12 @@ In the image above, we have a social network example. We can see the vertices re
 
 # Dataset
 ![image](https://user-images.githubusercontent.com/81246356/208618400-20eb51f2-5c21-49cb-bf7d-d499f76a9f1f.png)
+
 ![image](https://user-images.githubusercontent.com/81246356/208618463-a9363cca-fee0-43a4-af07-282b206f54d0.png)
 
-person.csv
-+--+-------+---+
-|id|   Name|Age|
-+--+-------+---+
-| 1| Andrew| 45|
-| 2| Sierra| 43|
-| 3|    Bob| 12|
-| 4|  Emily| 10|
-| 5|William| 35|
-| 6| Rachel| 32|
-+--+-------+---+
+![person and relation csv file](https://user-images.githubusercontent.com/81246356/208655258-14158d22-4d4b-42f5-85ca-a25f46ce3718.jpg)
 
 
- relation.csv
-
-+---+---+--------+
-|src|dst|relation|
-+---+---+--------+
-|  1|  2| Husband|
-|  1|  3|  Father|
-|  1|  4|  Father|
-|  1|  5|  Friend|
-|  1|  6|  Friend|
-|  2|  1|    Wife|
-|  2|  3|  Mother|
-|  2|  4|  Mother|
-|  2|  6|  Friend|
-|  3|  1|     Son|
-|  3|  2|     Son|
-|  4|  1|Daughter|
-|  4|  2|Daughter|
-|  5|  1|  Friend|
-|  6|  1|  Friend|
-|  6|  2|  Friend|
-+---+---+--------+
 # I already have VM installed so Just SSH to VM 
 - Install Java
 ```
@@ -99,10 +66,13 @@ spark-submit --packages graphframes:graphframes:0.8.2-spark3.1-s_2.12 graphX.py
 
 ## TriangleCount
 ![triangle Count img-1](https://user-images.githubusercontent.com/81246356/208653807-4518a3ff-c8e4-4e6c-ba45-ed7a67d64442.jpg)
+
 ![triangle count output img-2](https://user-images.githubusercontent.com/81246356/208653864-7050d666-28ce-4863-8550-0191be6ea0b3.jpg)
 
 ![triangle count img-3](https://user-images.githubusercontent.com/81246356/208653885-e9da0127-42b6-4d1c-99d0-42568908db69.jpg)
+
 ![triangle count img-4](https://user-images.githubusercontent.com/81246356/208653911-69fac5b5-130f-40d2-8748-ee40459cb58f.jpg)
+
 ![triangle count output 2 3 4 5](https://user-images.githubusercontent.com/81246356/208653956-5d73e978-9f46-4f92-a16f-1ed7e9b0e6aa.jpg)
 
 ## PageRank
@@ -113,8 +83,13 @@ spark-submit --packages graphframes:graphframes:0.8.2-spark3.1-s_2.12 graphX.py
 
 ## BFS
 ![bfs img-1](https://user-images.githubusercontent.com/81246356/208654141-aed97b73-998b-4f05-872e-0a65da47f0a6.jpg)
+
 ![bfs img-2](https://user-images.githubusercontent.com/81246356/208654167-e972f761-2462-4af4-bf9f-6d4388318477.jpg)
+
 ![bfs img-3](https://user-images.githubusercontent.com/81246356/208654199-9ce431fb-bdbe-424a-b65b-6186c9c83534.jpg)
 
+# References
+[Graphrames and Dataframes](https://graphframes.github.io/graphframes/docs/_site/index.html)
+[Intoduction to Spark GraphFrames](https://www.baeldung.com/spark-graph-graphframes)
 
 [Google Slide Presentaition for further detail](https://docs.google.com/presentation/d/1czQ5NuH8qud1Y95TqoVk1nD6JRV4bb43W-YHf-4GCmI/edit?usp=sharing)
